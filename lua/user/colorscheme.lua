@@ -1,4 +1,5 @@
-local colorscheme = "no-clown-fiesta"
+local colorscheme = "nightfox"
+local palette = "duskfox"
 
 -- Default options
 require(colorscheme).setup({
@@ -12,7 +13,7 @@ require(colorscheme).setup({
     -- module_default = true,  -- Default enable value for modules
     styles = {              -- Style to be applied to different syntax groups
       comments = "italic",    -- Value is any valid attr-list value `:help attr-list`
-      -- constants = "bold",
+      constants = "bold",
       -- conditionals = "NONE",
       -- functions = "NONE",
       -- keywords = "NONE",
@@ -22,11 +23,11 @@ require(colorscheme).setup({
       -- types = "NONE",
       -- variables = "NONE",
     },
-    -- inverse = {             -- Inverse highlight for different types
-    --   match_paren = false,
-    --   visual = false,
-    --   search = false,
-    -- },
+    inverse = {             -- Inverse highlight for different types
+      match_paren = false,
+      visual = false,
+      search = false,
+    },
     -- modules = {             -- List of various plugins and additional options
     --   -- ...
     -- },
@@ -36,7 +37,7 @@ require(colorscheme).setup({
   groups = {},
 })
 
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+local status_ok, _ = pcall(vim.cmd, "colorscheme " .. palette)
 if not status_ok then
   return
 end

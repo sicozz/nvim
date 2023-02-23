@@ -2,11 +2,13 @@ local servers = {
 	"sumneko_lua",
 	"html",
 	"pyright",
+  "pylsp",
 	"bashls",
 	"jsonls",
 	"yamlls",
   "rust_analyzer",
-  "taplo"
+  "taplo",
+  "jdtls"
 }
 
 local settings = {
